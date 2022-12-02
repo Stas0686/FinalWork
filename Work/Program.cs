@@ -1,28 +1,39 @@
-﻿void PrintArray(string[] x)
+﻿void PrintArray(string[] arr1)
 {
     Console.WriteLine("Исходный массив: ");
-    for (int i = 0; i < x.Length; i++)
+    for (int i = 0; i < arr1.Length; i++)
     {
-        Console.Write("{0}\t", x[i]);
+        Console.Write("{0}\t", arr1[i]);
     }
     Console.WriteLine();
+    
 }
 
-void ResultArray(string[] y)
+void ResultArray(string[] arr2)
 {
     Console.WriteLine("Результат: ");
-    string[] newarr = new string[y.Length];
-    for (int i = 0; i < y.Length; i++)
+    string[] newarr = new string[arr2.Length];
+    for (int i = 0; i < arr2.Length; i++)
     {
-        if (y[i].Length <= 3)
+        if (arr2[i].Length <= 3)
         {
-            newarr[i] = y[i];
+            newarr[i] = arr2[i];
             Console.Write("{0}\t", newarr[i]);
         }
     }
 }
 
-string[] array = { "work", "&^#", "gitHub", "123" };
+string[] array1 = { "work", "&^#", "gitHub", "123" };
+string[] array2 = { "1234", "123", "tutu", "321", "7952..." };
+string[] array3 = { "Яма", "рука", "гол", "шесть" };
 
-PrintArray(array);
-ResultArray(array);
+PrintArray(array1);
+ResultArray(array1);
+Console.WriteLine();
+Console.WriteLine();
+PrintArray(array2);
+ResultArray(array2);
+Console.WriteLine();
+Console.WriteLine();
+PrintArray(array3);
+ResultArray(array3);
