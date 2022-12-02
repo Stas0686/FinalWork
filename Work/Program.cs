@@ -6,19 +6,17 @@
         Console.Write("{0}\t", arr1[i]);
     }
     Console.WriteLine();
-    
+
 }
 
 void ResultArray(string[] arr2)
 {
     Console.WriteLine("Результат: ");
-    string[] newarr = new string[arr2.Length];
     for (int i = 0; i < arr2.Length; i++)
     {
         if (arr2[i].Length <= 3)
         {
-            newarr[i] = arr2[i];
-            Console.Write("{0}\t", newarr[i]);
+            Console.Write("{0}\t", arr2[i]);
         }
     }
 }
