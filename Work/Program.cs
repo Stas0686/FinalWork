@@ -6,7 +6,6 @@
         Console.Write("{0}\t", x[i]);
     }
     Console.WriteLine();
-    
 }
 
 void ResultArray(string[] y)
@@ -22,3 +21,8 @@ void ResultArray(string[] y)
         }
     }
 }
+
+string[] array = { "work", "&^#", "gitHub", "123" };
+
+PrintArray(array);
+ResultArray(array);
